@@ -3,7 +3,7 @@ name: pmp
 on:
   push:
     branches:
-      - pmp-gateway
+      - pmp-login
 
 jobs:
   deploy:
