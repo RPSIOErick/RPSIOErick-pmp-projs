@@ -7,7 +7,7 @@ EXPOSE 8082
 
 ADD https://dtdg.co/latest-java-tracer /app/dd-java-agent.jar
 
-ARG JAR_FILE=pmp/infrastructure/target/*.jar
+ARG JAR_FILE=infrastructure/target/*.jar
 COPY ${JAR_FILE} /app.jar
 
 ENTRYPOINT ["java","-jar","/app.jar"]
