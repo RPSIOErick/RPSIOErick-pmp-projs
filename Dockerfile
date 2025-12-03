@@ -3,7 +3,7 @@ LABEL authors="Raposio"
 
 WORKDIR /app
 
-ARG JAR_FILE=pmp-lambda/target/*.jar
+ARG JAR_FILE=target/*.jar
 
 COPY target/*.jar app.jar
 
